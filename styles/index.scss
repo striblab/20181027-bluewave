@@ -1,0 +1,60 @@
+/**
+ * Main style file for project.
+ * Uses SASS, specifically the SCSS syntax
+ * http://sass-lang.com/
+ */
+
+
+// Include strib-icons
+$strib-fonts-location: '//static.startribune.com/assets/libs/strib-icons/0.0.10/';
+@import '@striblab/strib-icons/build/strib-icons.scss';
+
+
+// Strib styles
+// https://github.com/striblab/strib-styles/blob/master/source/styles/_variables.scss
+
+// Assumed that this project lives within an existing page, so we add a
+// wrapper that is very specific and wrap our other styles in it so
+// that we don't affect other styles on the page.  Note that
+// this increases the CSS size, and it means strib-styles won't use
+// rems when it would otherwise.
+$selector-wrapper: '.strib-styles.ssa.ssb.ssc';
+@import '@striblab/strib-styles/source/styles/default-wrapper.scss';
+
+// Project specific styles.  Split styles into files per component
+#{$selector-wrapper} {
+  // Split your styles into multiple files so its easier to understand and change
+  @import 'project';
+}
+
+.r4 {
+  background-color: #8C1B17 !important;
+  fill: #8C1B17 !important;
+  color: white !important;
+  pointer-events: all;
+  font-weight: bold;
+  stroke:#8C1B17;
+}
+
+.d4 {
+  background-color: #3f88c5;
+  fill: #3f88c5 !important;
+  color: white !important;
+  pointer-events: all;
+  font-weight: bold;
+  stroke:#3f88c5 !important;
+}
+
+.legendary {
+  font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+  padding:4px;
+  color: #fff;
+  font-weight:bold;
+  border-radius: 5px;
+  padding: 0 7px;
+  margin-bottom: 3px;
+}
+
+.purple3 {
+  background-color:#8b62a8;
+}
