@@ -1,0 +1,12 @@
+{"approval":[{"president":"Clinton","party":"D","year":1998,"approval":0.66,"house_loss":5,"senate_loss":0,"mnhouse_loss":"-7","mnsenate_loss":"null"},
+{"president":"Reagan","party":"R","year":1986,"approval":0.63,"house_loss":-5,"senate_loss":-8,"mnhouse_loss":"-18","mnsenate_loss":""},
+{"president":"Bush","party":"R","year":2002,"approval":0.63,"house_loss":8,"senate_loss":2,"mnhouse_loss":"-11","mnsenate_loss":"5"},
+{"president":"Nixon","party":"R","year":1970,"approval":0.58,"house_loss":-12,"senate_loss":2,"mnhouse_loss":"0","mnsenate_loss":"null"},
+{"president":"Bush","party":"R","year":1990,"approval":0.58,"house_loss":-8,"senate_loss":-1,"mnhouse_loss":"0","mnsenate_loss":"null"},
+{"president":"Ford","party":"R","year":1974,"approval":0.54,"house_loss":-28,"senate_loss":-4,"mnhouse_loss":"0","mnsenate_loss":"null"},
+{"president":"Carter","party":"D","year":1978,"approval":0.49,"house_loss":-15,"senate_loss":-2,"mnhouse_loss":"-32","mnsenate_loss":"null"},
+{"president":"Clinton","party":"D","year":1994,"approval":0.46,"house_loss":-54,"senate_loss":-9,"mnhouse_loss":"-13","mnsenate_loss":"null"},
+{"president":"Obama","party":"D","year":2010,"approval":0.45,"house_loss":-63,"senate_loss":-6,"mnhouse_loss":"-25","mnsenate_loss":"-16"},
+{"president":"Reagan","party":"R","year":1982,"approval":0.42,"house_loss":-26,"senate_loss":-1,"mnhouse_loss":"-7","mnsenate_loss":"2"},
+{"president":"Obama","party":"D","year":2014,"approval":0.40,"house_loss":-13,"senate_loss":-9,"mnhouse_loss":"-11","mnsenate_loss":"null"},
+{"president":"Bush","party":"R","year":2006,"approval":0.38,"house_loss":-30,"senate_loss":-6,"mnhouse_loss":"-19","mnsenate_loss":"-6"}]}
