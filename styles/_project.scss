@@ -7,8 +7,7 @@
 }
 .elex-header h1 {
   padding-top: 0.3em;
-  line-heig
-  ht: 1.1em;
+  line-height: 1.1em;
 }
 .elex-header h5, .elex-header h5 span {
   text-transform: uppercase;
@@ -103,12 +102,16 @@ section.body p {
   #chartTrend .c3-line {
       opacity:0 !important;
  }
+
   #chartPVI .c3-area {
       opacity: 1 !important;
  }
   #chartPVI .c3-line {
       opacity: 1 !important;
       stroke-width: 2px !important;
+ }
+ #chartBallot .c3-line {
+    stroke-width: 1px !important;
  }
   .powerline {
       stroke-dasharray: 5, 5;

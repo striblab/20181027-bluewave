@@ -47,6 +47,9 @@ function klobuChart() {
         left: 40,
     };
 
+    var dcand = ["Klobuchar", "Smith", "Walz"];
+    var rcand = ["Newburger", "Housley", "Johnson"];
+
     var klobuChart = c3.generate({
         bindto: "#klobuChart",
         padding: padding,
@@ -59,9 +62,9 @@ function klobuChart() {
             type: 'bar',
             labels: {
                 format: {
-                    'DEM': d3.format('.0%'),
-                    'GOP': d3.format('.0%'),
-                    'IND': d3.format('.0%')
+                    'DEM': function (v, id, i, j) { return d3.format('.0%')(v) + " " + dcand[i]; },
+                    'GOP': function (v, id, i, j) { return d3.format('.0%')(v) + " " + rcand[i]; },
+                    'IND': function (v, id, i, j) { return d3.format('.0%')(v) + " other"; }
                 }
             }
         },
@@ -105,11 +108,11 @@ function klobuChart() {
 
     d3.selectAll(".c3-target-DEM")
         .selectAll(".c3-bar, .c3-texts")
-        .attr("transform", "translate(-10, 0)");
+        .attr("transform", "translate(-20, 0)");
 
     d3.selectAll(".c3-target-IND")
         .selectAll(".c3-bar, .c3-texts")
-        .attr("transform", "translate(10, 0)");
+        .attr("transform", "translate(20, 0)");
 
 }
 
@@ -139,6 +142,8 @@ function chartBallot(dataT) {
         bottom: 20,
         left: 60,
     };
+
+    var formatTime = d3.timeFormat("%B %d, %Y");
 
     var chartBallot = c3.generate({
         bindto: "#chartBallot",
@@ -213,7 +218,9 @@ function chartBallot(dataT) {
         }, ],
         tooltip: {
             contents: function(d, defaultTitleFormat, defaultValueFormat, color) {
-                return '<div class="chart-tooltip"><div>' + d[0].x + '</div></div>' +
+               
+
+                return '<div class="chart-tooltip"><div>' + formatTime(d[0].x) + '</div></div>' +
                     '<div class="chart-tooltip d4"><span class="tooltip-label">' + d[0].id + ':</span>' +
                     '<span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span>' +
                     '</div><div class="chart-tooltip r4"><span class="tooltip-label">' + d[1].id + ':</span>' +
