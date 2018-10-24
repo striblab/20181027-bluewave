@@ -79,11 +79,20 @@ section.body p {
 }
 .dropdown-content a {
   text-decoration:none;
-  color:#ffffff;
+  color:#8C1B17;
 }
 .dropdown:hover .dropdown-content {
   display: block;
   cursor:pointer;
+}
+.bluedrop {
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    color: #3f88c5;
+    text-decoration:underline;
+  }
+.reddrop {
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
+    color: #8C1B17 !important;
 }
 
 // base dataviz styles
@@ -209,7 +218,7 @@ section.body p {
       height:500px;
  }
   #swingChart .column {
-      width:24%;
+      width:19.7%;
       display:inline-block;
       text-align:center;
  }
@@ -236,12 +245,22 @@ section.body p {
   .pollstack {
       margin-bottom:8px;
  }
+ #approvalSpill, .columnHead, .pollstack {
+    text-align:center;
+    pointer-events:none;
+}
+.approval {
+    font-weight:bold;
+}
   .smallchart {
       height:180px;
       display:inline-block;
  }
   .columnHead {
       font-weight:900;
+ }
+ #klobuChart {
+     pointer-events:none;
  }
   #chartGap .column {
       width:19%;
@@ -268,7 +287,8 @@ section.body p {
       text-align:center;
  }
   #swingChart img {
-      width:100%;
+    width: 85%;
+    margin-left: 23px;
  }
   .row {
       display:inline-block;

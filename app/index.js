@@ -47,17 +47,17 @@ function klobuChart() {
         left: 40,
     };
 
-    var dcand = ["Klobuchar", "Smith", "Walz"];
-    var rcand = ["Newburger", "Housley", "Johnson"];
+    var dcand = ["Klobuchar", "Smith", "Walz", "Ellison"];
+    var rcand = ["Newburger", "Housley", "Johnson", "Wardlow"];
 
     var klobuChart = c3.generate({
         bindto: "#klobuChart",
         padding: padding,
         data: {
             columns: [
-                ['DEM', 0.60, 0.44, 0.45],
-                ['GOP', 0.30, 0.37, 0.36],
-                ['IND', 0.10, 0.19, 0.19]
+                ['DEM', 0.56, 0.47, 0.45],
+                ['GOP', 0.33, 0.41, 0.39],
+                ['IND', 0.11, 0.12, 0.16]
             ],
             type: 'bar',
             labels: {
@@ -69,6 +69,9 @@ function klobuChart() {
             }
         },
         legend: {
+            show: false
+        },
+        tooltip: {
             show: false
         },
         color: {
@@ -164,7 +167,7 @@ function chartBallot(dataT) {
         point: {
             show: true,
             r: function(d) {
-                if (d.x == "06-07-2018") {
+                if (d.x == "10-24-2018") {
                     return 6;
                 } else {
                     return 2.5;
@@ -179,7 +182,7 @@ function chartBallot(dataT) {
         },
         axis: {
             y: {
-                max: 1,
+                max: 0.75,
                 min: 0,
                 padding: {
                     bottom: 0,
@@ -187,7 +190,7 @@ function chartBallot(dataT) {
                 },
                 tick: {
                     count: 4,
-                    values: [0, 0.25, 0.50, 0.75, 1],
+                    values: [0, 0.25, 0.50, 0.75],
                     format: d3.format('.0%')
                 }
             },
@@ -246,16 +249,16 @@ function chartPoll(container, data) {
         .html(function(d) {
 
             var color = "r4";
-            var color2 = "green3";
+            var color2 = "#5BBF48";
 
             if (d.party == "D") {
                 color = "d4";
             }
             if (d.approval < 0.50) {
-                color2 = "orange3";
+                color2 = "#E07242";
             }
 
-            return '<div class="column prez ' + color + '">' + d.president + ' ' + d.year + '</div><div class="column ' + color2 + '">' + d3.format(".0%")(d.approval) + '</div><div class="column chartCol ' + color + '">' + d3.format("+")(d.house_loss) + '</div><div class="column chartCol ' + color + '">' + d3.format("+")(d.mnhouse_loss) + '</div>';
+            return '<div class="column prez ' + color + '">' + d.president + ' ' + d.year + '</div><div class="column" style="color:' + color2 + '">' + d3.format(".0%")(d.approval) + '</div><div class="column chartCol ' + color + '">' + d.party + d3.format("+")(d.house_loss) + '</div><div class="column chartCol ' + color + '">' + d.party + d3.format("+")(d.mnhouse_loss) + '</div>';
         });
 
 }
