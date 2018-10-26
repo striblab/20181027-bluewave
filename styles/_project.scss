@@ -155,6 +155,9 @@ section.body p {
       text-align:center;
       vertical-align:top;
  }
+ #chartGap img {
+    width: 250px !important;
+ }
   .adjacent img {
       width:100%;
  }
@@ -263,7 +266,7 @@ section.body p {
      pointer-events:none;
  }
   #chartGap .column {
-      width:24.5%;
+      width:49%;
       display:inline-block;
       text-align:center;
  }
@@ -285,9 +288,6 @@ section.body p {
       width:30%;
       display:inline-block;
       text-align:center;
- }
-  #swingChart img {
-    width: 85%;
  }
   .row {
       display:inline-block;
@@ -1346,6 +1346,9 @@ section.body p {
  }
   #scoreChart .column {
       width:25%;
+ }
+ .column {
+     width:49% !important;
  }
   .break {
       display:block !important;
