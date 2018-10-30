@@ -284,11 +284,6 @@ section.body p {
       text-align:left;
       font-weight:bold;
  }
-  #chartApproval .chartCol {
-      width:30%;
-      display:inline-block;
-      text-align:center;
- }
   .row {
       display:inline-block;
       width:32%;
@@ -1348,7 +1343,7 @@ section.body p {
       width:25%;
  }
  .column {
-     width:49% !important;
+     width:49%;
  }
   .break {
       display:block !important;
@@ -1356,6 +1351,16 @@ section.body p {
   #scoreChart .name {
       width:49% !important;
  }
+ #chartApproval .column, .chartCol {
+    width:24% !important;
+    display:inline-block;
+    text-align:center;
+}
+#chartApproval {
+    width:100% !important;
+    margin-left:auto;
+    margin-right:auto;
+}
 }
 @media (max-width:520px) {
   section.container-lg {

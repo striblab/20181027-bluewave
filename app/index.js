@@ -44,7 +44,7 @@ function klobuChart() {
         top: 20,
         right: 60,
         bottom: 20,
-        left: 40,
+        left: 80,
     };
 
     var dcand = ["Klobuchar", "Smith", "Walz", "Ellison"];
@@ -78,7 +78,7 @@ function klobuChart() {
             pattern: ['#3585BC', '#d34A44', "#8b62a8"]
         },
         axis: {
-            // rotated: true,
+            rotated: true,
             y: {
                 max: 1,
                 min: 0,
@@ -111,11 +111,11 @@ function klobuChart() {
 
     d3.selectAll(".c3-target-DEM")
         .selectAll(".c3-bar, .c3-texts")
-        .attr("transform", "translate(-20, 0)");
+        .attr("transform", "translate(0, -5)");
 
     d3.selectAll(".c3-target-IND")
         .selectAll(".c3-bar, .c3-texts")
-        .attr("transform", "translate(20, 0)");
+        .attr("transform", "translate(0, 5)");
 
 }
 
