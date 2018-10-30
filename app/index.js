@@ -226,7 +226,7 @@ function chartBallot(dataT) {
                 return '<div class="chart-tooltip"><div>' + formatTime(d[0].x) + '</div></div>' +
                     '<div class="chart-tooltip d4"><span class="tooltip-label">' + d[0].id + ':</span>' +
                     '<span class="tooltip-value">' + defaultValueFormat(d[0].value) + '</span>' +
-                    '</div><div class="chart-tooltip r4"><span class="tooltip-label">' + d[1].id + ':</span>' +
+                    '</div><div class="chart-tooltip r3"><span class="tooltip-label">' + d[1].id + ':</span>' +
                     '<span class="tooltip-value">' + defaultValueFormat(d[1].value) + '</span>' +
                     '</div>';
             }
@@ -248,7 +248,7 @@ function chartPoll(container, data) {
         })
         .html(function(d) {
 
-            var color = "r4";
+            var color = "r3";
             var color2 = "#5BBF48";
 
             if (d.party == "D") {
