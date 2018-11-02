@@ -266,7 +266,7 @@ section.body p {
       font-weight:900;
  }
  #klobuChart {
-     pointer-events:none;
+    pointer-events:none !important;
  }
   #chartGap .column {
       width:49%;
