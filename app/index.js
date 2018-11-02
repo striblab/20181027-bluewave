@@ -271,7 +271,7 @@ function loadData(data) {
 }
 
 $.ajax({
-    url: './data/approval.json',
+    url: 'http://static.startribune.com/news/projects/all/20181027-bluewave/data/approval.json',
     async: false,
     dataType: 'json',
     success: function(response) {
@@ -286,7 +286,7 @@ function loadDataT(data) {
 
 var dataT;
 $.ajax({
-    url: './data/ballot.json',
+    url: 'http://static.startribune.com/news/projects/all/20181027-bluewave/data/ballot.json',
     async: false,
     dataType: 'json',
     success: function(response) {
