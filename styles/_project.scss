@@ -86,14 +86,17 @@ section.body p {
   cursor:pointer;
 }
 .bluedrop {
-    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
-    color: #3f88c5;
-    text-decoration:underline;
+    border-bottom: 3px solid #3f88c5 !important;
+    line-height:85%;
   }
-.reddrop {
-    font-family: "Benton Sans", Helvetica, Arial, sans-serif;
-    color: #8C1B17 !important;
-}
+  .reddrop {
+   color: #8C1B17 !important;
+
+  }
+  .smallarrow {
+    font-size:0.5em;
+    margin-left:5px;
+  }
 
 // base dataviz styles
 .slide {
@@ -357,14 +360,16 @@ section.body p {
       padding: 0 7px;
       margin-bottom: 3px;
  }
-  .chatter {
-      line-height:140%;
-      margin-bottom:12px;
- }
+ .chatter {
+    font-size:0.8em;
+    font-family: "Benton Sans", Helvetica, Arial, sans-serif !important;
+    color:#333;
+    margin-bottom:20px;
+  }
   .chartTitle {
-      font-size:1.5em;
-      font-weight:900;
- }
+    font-size:1.1em;
+    font-weight:900;
+  }
   .map {
       text-align:center;
  }

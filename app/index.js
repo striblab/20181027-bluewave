@@ -48,7 +48,7 @@ function klobuChart() {
     };
 
     var dcand = ["Klobuchar", "Smith", "Walz", "Ellison"];
-    var rcand = ["Newburger", "Housley", "Johnson", "Wardlow"];
+    var rcand = ["Newberger", "Housley", "Johnson", "Wardlow"];
 
     var klobuChart = c3.generate({
         bindto: "#klobuChart",
